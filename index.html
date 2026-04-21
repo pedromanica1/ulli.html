@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de navegação - 1 2 3</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Classe do menu */
+        .menu-navegacao {
+            background: #ffffff;
+            border-radius: 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 1rem;
+        }
+
+        /* Combinador: lista dentro da classe .menu-navegacao */
+        .menu-navegacao ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        /* Combinador: itens da lista */
+        .menu-navegacao li {
+            margin: 0;
+        }
+
+        /* Links no estado normal */
+        .menu-navegacao a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            background: #ecf0f1;
+            padding: 0.75rem 1.5rem;
+            border-radius: 40px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        /* Efeito hover (quando passar o mouse) */
+        .menu-navegacao a:hover {
+            background: #3498db;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+        }
+
+        /* Opcional: foco para acessibilidade */
+        .menu-navegacao a:focus {
+            outline: 2px solid #2980b9;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu-navegacao">
+        <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
